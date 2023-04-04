@@ -1,5 +1,5 @@
-#Pacman
-#Instructions to compile and run the code:
+Pacman
+Instructions to compile and run the code:
 
 Open this folder in VSCode
 
