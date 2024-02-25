@@ -1,11 +1,12 @@
-#include<SDL.h>
-#include"button.hpp"
+#include <SDL2/SDL.h>
+#include "button.hpp"
 
-class Exit_Game : public Button{
-// SDL_Rect srcRect, moverRect;
-// bool come_back = false;
+class Exit_Game : public Button
+{
+    // SDL_Rect srcRect, moverRect;
+    // bool come_back = false;
 public:
-    void draw(SDL_Renderer*, SDL_Texture* assets);
+    void draw(SDL_Renderer *, SDL_Texture *assets);
     void animate();
-    Exit_Game(); // may add other overloaded constructors here... 
+    Exit_Game(); // may add other overloaded constructors here...
 };

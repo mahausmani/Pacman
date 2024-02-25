@@ -1,15 +1,17 @@
-#include<SDL.h>
+#include <SDL2/SDL.h>
 #include <string>
 #include <vector>
 #include <fstream>
 #pragma once
 
-class Button{
+class Button
+{
 protected:
-SDL_Rect srcRect, moverRect;
-bool come_back=false;
+    SDL_Rect srcRect, moverRect;
+    bool come_back = false;
+
 public:
-    void draw(SDL_Renderer*, SDL_Texture* assets);
+    void draw(SDL_Renderer *, SDL_Texture *assets);
     void animate();
-    Button(); // may add other overloaded constructors here... 
+    Button(); // may add other overloaded constructors here...
 };

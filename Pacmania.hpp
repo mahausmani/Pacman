@@ -1,5 +1,5 @@
-#include<SDL.h>
-#include<list>
+#include <SDL2/SDL.h>
+#include <list>
 using namespace std;
 #include "start_game.hpp"
 #include "exit_game.hpp"
@@ -9,22 +9,23 @@ using namespace std;
 #include "ghosts.hpp"
 #pragma once
 
-class Pacmania{
-    protected:
-        SDL_Renderer *gRenderer;
-        SDL_Texture *assets;
-        Button* p1 = new Start_Game;
-        Button* p2 = new Exit_Game;
-        Game g;
-        int grid_w;
-        int grid_h;
-        char* grid;
+class Pacmania
+{
+protected:
+    SDL_Renderer *gRenderer;
+    SDL_Texture *assets;
+    Button *p1 = new Start_Game;
+    Button *p2 = new Exit_Game;
+    Game g;
+    int grid_w;
+    int grid_h;
+    char *grid;
 
-    public:
-    list<Ghost*> ghosts;  
+public:
+    list<Ghost *> ghosts;
     Pacman *p;
-    Pacmania(SDL_Renderer *, SDL_Texture *, char* grid_, const int grid_width, const int grid_height);
-    void drawObjects(); 
+    Pacmania(SDL_Renderer *, SDL_Texture *, char *grid_, const int grid_width, const int grid_height);
+    void drawObjects();
     void createObject(int, int);
     SDL_Rect move_right();
     SDL_Rect move_left();
@@ -37,6 +38,6 @@ class Pacmania{
     bool can_move_left();
     bool can_move_up();
     bool can_move_down();
-    void moveGhost(Ghost* ghost);
-    bool checkCollision(Ghost* ghost, Pacman p);
+    void moveGhost(Ghost *ghost);
+    bool checkCollision(Ghost *ghost, Pacman p);
 };
