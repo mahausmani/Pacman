@@ -10,4 +10,4 @@ g++ *.cpp -IC:\mingw_dev_lib\include\SDL2 -LC:\mingw_dev_lib\lib -w -lmingw32 -l
 🎮 Run the game by this command: .\a.out
 ```
 
-Enjoy playing Pacman! 👻
+Enjoy playing Pacman! 
